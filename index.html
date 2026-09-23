@@ -1,0 +1,115 @@
+   <!DOCTYPE html>
+<html lang="te">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Line AI & Smart Education Portal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation Header -->
+    <header>
+        <div class="logo">Smart Line <span>AI</span></div>
+        <nav>
+            <a href="#home" class="active">Home</a>
+            <a href="#smart-edu">Smart Education</a>
+            <a href="#learning-portal">Student Learning Hub</a>
+            <a href="#live-demo">AI Queue Monitor</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <span class="badge">Student Innovation 2026</span>
+        <h1>Smart Education & Intelligent Learning Portal</h1>
+        <p>Enabling learners in the digital age to learn more <strong>effectively, efficiently, flexibly, and comfortably</strong> through AI-curated interactive learning paths.</p>
+        <div class="hero-buttons">
+            <a href="#learning-portal" class="btn primary-btn">Start Learning Now</a>
+            <a href="#live-demo" class="btn secondary-btn">Try Queue AI Demo</a>
+        </div>
+    </section>
+
+    <!-- Smart Education Core Pillars -->
+    <section id="smart-edu" class="section-container">
+        <h2 class="section-title">Smart Education Pillars</h2>
+        <p class="section-subtitle">How digital age learning adapts to student needs</p>
+        
+        <div class="metrics-grid">
+            <div class="card">
+                <div class="icon">🎯</div>
+                <h3>Effective</h3>
+                <p>Personalized learning pathways tailored to individual capabilities.</p>
+            </div>
+            <div class="card">
+                <div class="icon">⚡</div>
+                <h3>Efficient</h3>
+                <p>Quick concepts, ready-to-run code snippets, and automated feedback.</p>
+            </div>
+            <div class="card">
+                <div class="icon">🔄</div>
+                <h3>Flexible</h3>
+                <p>Learn at your own pace anytime, anywhere across multiple domains.</p>
+            </div>
+            <div class="card">
+                <div class="icon">🛋️</div>
+                <h3>Comfortable</h3>
+                <p>Simple, clean interactive UI for stress-free self-learning.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Learning Hub Section -->
+    <section id="learning-portal" class="section-container bg-darker">
+        <h2 class="section-title">Interactive Student Learning Hub</h2>
+        <p class="section-subtitle">కింది టాపిక్స్‌పై క్లిక్ చేసి పాఠాలు నేర్చుకోండి (Click a topic below to learn)</p>
+
+        <!-- Topic Selection Tabs -->
+        <div class="topic-tabs">
+            <button class="tab-btn active" onclick="loadCourse('python', this)">🐍 Python Programming</button>
+            <button class="tab-btn" onclick="loadCourse('ai', this)">🤖 AI & Computer Vision</button>
+            <button class="tab-btn" onclick="loadCourse('webdev', this)">🌐 Web Development</button>
+            <button class="tab-btn" onclick="loadCourse('dsa', this)">⚡ Data Structures</button>
+        </div>
+
+        <!-- Dynamic Lesson Display Area -->
+        <div id="course-content-area" class="course-display-card">
+            <!-- JavaScript will populate learning content here -->
+        </div>
+    </section>
+
+    <!-- Smart Line AI Queue Monitor Section -->
+    <section id="live-demo" class="section-container">
+        <h2 class="section-title">Smart Line AI Dashboard</h2>
+        <p class="section-subtitle">Real-Time Intelligent Crowd & Queue Analytics Simulation</p>
+
+        <div class="dashboard-controls">
+            <button class="btn primary-btn" onclick="runQueueSimulation()">Simulate Lab/Campus Crowd Flow</button>
+        </div>
+
+        <div class="metrics-grid">
+            <div class="card">
+                <h3>Queue Status</h3>
+                <p id="queue-status" class="stat-value text-green">Normal</p>
+            </div>
+            <div class="card">
+                <h3>Active Count</h3>
+                <p id="people-count" class="stat-value">12 Students</p>
+            </div>
+            <div class="card">
+                <h3>Est. Wait Time</h3>
+                <p id="wait-time" class="stat-value">4 Mins</p>
+            </div>
+            <div class="card">
+                <h3>AI Recommendation</h3>
+                <p id="ai-rec" class="stat-value text-blue">Optimal Capacity</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>Smart Line AI & Smart Education Project | Hackathon Prototype</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

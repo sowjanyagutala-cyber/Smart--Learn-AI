@@ -1,0 +1,295 @@
+/* Reset & Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, sans-serif;
+}
+
+body {
+    background-color: #0f172a;
+    color: #f8fafc;
+    line-height: 1.6;
+    scroll-behavior: smooth;
+}
+
+/* Header & Navigation */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.2rem 8%;
+    background-color: #1e293b;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.logo {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: #38bdf8;
+}
+
+.logo span {
+    color: #818cf8;
+}
+
+nav a {
+    color: #94a3b8;
+    text-decoration: none;
+    margin-left: 1.8rem;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+nav a:hover, nav a.active {
+    color: #38bdf8;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 4.5rem 1rem;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.badge {
+    background-color: rgba(56, 189, 248, 0.15);
+    color: #38bdf8;
+    padding: 0.4rem 1rem;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    display: inline-block;
+    margin-bottom: 1.5rem;
+    border: 1px solid rgba(56, 189, 248, 0.3);
+}
+
+.hero h1 {
+    font-size: 2.6rem;
+    line-height: 1.2;
+    margin-bottom: 1.2rem;
+    color: #f1f5f9;
+}
+
+.hero p {
+    color: #94a3b8;
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+}
+
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.btn {
+    padding: 0.8rem 1.8rem;
+    border-radius: 8px;
+    font-weight: 600;
+    text-decoration: none;
+    cursor: pointer;
+    border: none;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+.primary-btn {
+    background: linear-gradient(135deg, #38bdf8, #6366f1);
+    color: #ffffff;
+}
+
+.primary-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(56, 189, 248, 0.4);
+}
+
+.secondary-btn {
+    background-color: #334155;
+    color: #f8fafc;
+}
+
+.secondary-btn:hover {
+    background-color: #475569;
+}
+
+/* Section Containers */
+.section-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 4rem 1.5rem;
+}
+
+.bg-darker {
+    background-color: #0b1120;
+    border-radius: 16px;
+    padding: 3rem 2rem;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2rem;
+    color: #f1f5f9;
+    margin-bottom: 0.5rem;
+}
+
+.section-subtitle {
+    text-align: center;
+    color: #94a3b8;
+    margin-bottom: 2.5rem;
+}
+
+/* Metrics Grid & Cards */
+.metrics-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.5rem;
+}
+
+.card {
+    background-color: #1e293b;
+    padding: 1.8rem;
+    border-radius: 12px;
+    border: 1px solid #334155;
+    text-align: center;
+}
+
+.card .icon {
+    font-size: 2rem;
+    margin-bottom: 0.8rem;
+}
+
+.card h3 {
+    color: #cbd5e1;
+    margin-bottom: 0.6rem;
+}
+
+.card p {
+    color: #94a3b8;
+    font-size: 0.95rem;
+}
+
+.stat-value {
+    font-size: 1.4rem !important;
+    font-weight: 700;
+    color: #38bdf8 !important;
+    margin-top: 0.5rem;
+}
+
+.text-green { color: #4ade80 !important; }
+.text-blue { color: #38bdf8 !important; }
+
+/* Interactive Learning Portal Tabs */
+.topic-tabs {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+}
+
+.tab-btn {
+    background-color: #1e293b;
+    color: #94a3b8;
+    border: 1px solid #334155;
+    padding: 0.8rem 1.5rem;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.tab-btn:hover, .tab-btn.active {
+    background-color: #38bdf8;
+    color: #0f172a;
+    border-color: #38bdf8;
+    box-shadow: 0 4px 12px rgba(56, 189, 248, 0.3);
+}
+
+/* Course Display Box */
+.course-display-card {
+    background-color: #1e293b;
+    border-radius: 12px;
+    padding: 2.5rem;
+    border-left: 5px solid #38bdf8;
+    border-right: 1px solid #334155;
+    border-top: 1px solid #334155;
+    border-bottom: 1px solid #334155;
+}
+
+.course-display-card h3 {
+    font-size: 1.8rem;
+    color: #f1f5f9;
+    margin-bottom: 0.8rem;
+}
+
+.course-meta {
+    display: inline-block;
+    background-color: rgba(56, 189, 248, 0.1);
+    color: #38bdf8;
+    padding: 0.3rem 0.8rem;
+    border-radius: 4px;
+    font-size: 0.85rem;
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+}
+
+.course-display-card p {
+    color: #cbd5e1;
+    font-size: 1.05rem;
+    margin-bottom: 1.5rem;
+}
+
+.course-display-card h4 {
+    color: #38bdf8;
+    margin-top: 1.5rem;
+    margin-bottom: 0.8rem;
+    font-size: 1.2rem;
+}
+
+.course-display-card ul {
+    list-style-type: none;
+    margin-bottom: 1.5rem;
+}
+
+.course-display-card ul li {
+    background-color: #0f172a;
+    padding: 0.8rem 1.2rem;
+    margin-bottom: 0.5rem;
+    border-radius: 6px;
+    color: #94a3b8;
+    border-left: 3px solid #818cf8;
+}
+
+/* Code Snippet Box */
+.code-block {
+    background-color: #090d16;
+    color: #38bdf8;
+    padding: 1.2rem;
+    border-radius: 8px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 0.95rem;
+    overflow-x: auto;
+    border: 1px solid #334155;
+    white-space: pre-wrap;
+}
+
+.dashboard-controls {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+footer {
+    text-align: center;
+    padding: 2rem;
+    background-color: #0b1120;
+    color: #64748b;
+    font-size: 0.9rem;
+    border-top: 1px solid #1e293b;
+    margin-top: 3rem;
+}
